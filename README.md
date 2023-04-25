@@ -34,7 +34,6 @@ for (int i = 0; i < 1000000; i++)
     UserModel testUser = new UserModel { Login = "Test", Password = "Test" };
     userList.Add(testUser);
 }
-DataManager dataManager = new DataManager("Server=localhost;Database=UserMvc;Integrated Security=True;TrustServerCertificate=True");
 dataManager.InsertEnumerable(userList);
 ```
 
